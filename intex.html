@@ -1,36 +1,24 @@
-<doctype.!DOCTYPE html>
+
+<!DOCTYPE html>
 <html>
 <head>
-	<title>image</title>
+	<title>my website</title>
+	
 </head>
 <body>
-<h1>lion</h1>
-<h2>tiger</h2>
-<h3>deer</h3>
+<button onclick="showContent()">Show your image</button>
+<template>
+  <h2>your image</h2>
+  <img src="mokey.jpg.jpg" width="214" height="204">
+</template>
+<script>
+function showContent() {
+  let temp = document.getElementsByTagName("template")[0];
+  let clon = temp.content.cloneNode(true);
+  document.body.appendChild(clon);
+}
+</script>
+
 </body>
 </html>
-<style type="text/css">
-	h1{
-		color: red;
-		background-color: green;
-		text-align: center;
 
-	}
-h2{
-	background-color:  blue;
-}
-h3{
-	background-color: yellow;
-}
-body{
-	display: inline-block;
-	border-color: blue;
-}
-p{
-	text-align: center;
-}
-
-</style>
-<div>
-<p>hi how are you </p>
-</div>
